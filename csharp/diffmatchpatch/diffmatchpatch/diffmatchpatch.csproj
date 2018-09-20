@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <PackOnBuild>true</PackOnBuild>
+    <PackageId>diff-match-patch-csharp</PackageId>
+    <PackageVersion>1.0</PackageVersion>
+    <PackageLicenseUrl>https://github.com/google/diff-match-patch/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <Owners>Google Inc.</Owners>
+    <PackageProjectUrl>https://github.com/google/diff-match-patch</PackageProjectUrl>
+    <Description>Diff Match Patch is a high-performance library in multiple languages that manipulates plain text. This is the C# version of the library.</Description>
+    <Title>diff-match-patch-csharp</Title>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Class1.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\DiffMatchPatch.cs">
+      <Link>DiffMatchPatch.cs</Link>
+    </Compile>
+  </ItemGroup>
+</Project>
